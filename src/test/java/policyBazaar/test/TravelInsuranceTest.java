@@ -52,7 +52,7 @@ public class TravelInsuranceTest {
         extent.attachReporter(htmlReporter);
     }
 
-    @Test(priority = 1)
+    @Test(groups= {"sanity"},priority = 1)
     public void testTravelInsurance() throws InterruptedException {
         test = extent.createTest("testTravelInsurance");
         test.log(Status.INFO, "Clicking on the insurance button");
@@ -75,7 +75,7 @@ public class TravelInsuranceTest {
         captureScreenshot("testTravelInsurance");
     }
 
-    @Test(priority = 2)
+    @Test(groups= {"sanity"},priority = 2)
 
     public void SelectDestination() throws InterruptedException {
         test = extent.createTest("SelectDestination");
@@ -89,7 +89,7 @@ public class TravelInsuranceTest {
         captureScreenshot("SelectDestination");
     }
 
-    @Test(priority = 3)
+    @Test(groups= {"sanity"},priority = 3)
     public void SelectDate() throws InterruptedException {
         test = extent.createTest("SelectDate");
         test.log(Status.INFO, "Selecting date");
@@ -289,7 +289,7 @@ public class TravelInsuranceTest {
 
     @AfterClass
     public void tearDown() {
-       //Driver.CloseBrowser();
+       Driver.CloseBrowser();
 
         // Generate the Extent report
         extent.flush();

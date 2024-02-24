@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Sanity Suite">
   <test name="Sanity Tests">
-    <groups>
+    <!--<groups>
       <run>
         <include name="sanity"/>
       </run>
-    </groups>
+    </groups>-->
     <classes>
       <class name="policyBazaar.test.TravelInsuranceTest"/>
     </classes>

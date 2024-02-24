@@ -12,21 +12,21 @@ public class Driver {
 	
 	public WebDriver setup()
 	{
-		Scanner sc=new Scanner(System.in);	
-		System.out.println("Choose your Browser");
-		System.out.println("1. Chrome Browser");
-		System.out.println("2. Edge Browser");
-		System.out.print("Enter your choice : ");
-		String c=sc.nextLine();
-		sc.close();
-		if(c.equalsIgnoreCase("1"))
-		{
+//		Scanner sc=new Scanner(System.in);	
+//		System.out.println("Choose your Browser");
+//		System.out.println("1. Chrome Browser");
+//		System.out.println("2. Edge Browser");
+//		System.out.print("Enter your choice : ");
+//		String c=sc.nextLine();
+//		sc.close();
+//		if(c.equalsIgnoreCase("1"))
+//		{
 			driver=new ChromeDriver();
-		}
-		else
-		{
-			driver=new EdgeDriver();
-		}
+//		}
+//		else
+//		{
+//			driver=new EdgeDriver();
+//		}
 		driver.get("https://policybazaar.com");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
