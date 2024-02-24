@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Sanity Tests(failed)" verbose="0">
+    <classes>
+      <class name="policyBazaar.test.TravelInsuranceTest">
+        <methods>
+          <include name="SelectingStudentTrip"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="SwitchChild"/>
+          <include name="HealthInsurance"/>
+          <include name="tearDown"/>
+          <include name="CarInsurance"/>
+          <include name="fillingForm"/>
+          <include name="InsuranceData"/>
+        </methods>
+      </class> <!-- policyBazaar.test.TravelInsuranceTest -->
+    </classes>
+  </test> <!-- Sanity Tests(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->
